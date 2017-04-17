@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Flat Design</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Bootstrap (latest) Grid Styles Only -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table !important}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table !important}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table !important}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table !important}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table !important}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+
+	<!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
+	<style>::-webkit-input-placeholder{color:#b3b3b1;opacity:1}:-moz-placeholder{color:#b3b3b1;opacity:1}::-moz-placeholder{color:#b3b3b1;opacity:1}:-ms-input-placeholder{color:#b3b3b1;opacity:1}body input:focus:required:invalid,body textarea:focus:required:invalid{color:#666}body input:required:valid,body textarea:required:valid{color:#666}body{font-size:16px;min-width:550px;position:relative;font-family:arial,sans-serif;overflow-x:hidden}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*{outline:0!important}.hidden{display:none}.button,.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-weight:700;color:#363f48;font-family:Arial,sans-serif}h1{font-size:60px;line-height:52px}h2{font-size:32px;line-height:40px}h3{font-size:21px;line-height:35px}h4{font-size:14px;line-height:30px}b,p,span,strong{font-size:16px;line-height:22px}a{outline:0!important;color:#3ea5ce}a:active,a:focus,a:hover{text-decoration:none}body{font-family:arial,sans-serif}a.button{background-color:#fe0;color:#313841}.sl-arrow{width:65px;height:65px;background-color:rgba(49,56,65,.5);-webkit-border-radius:50%;border-radius:50%;-webkit-box-shadow:0 1px 0 1px rgba(0,0,0,.5),inset 0 1px 1px 0 rgba(255,255,255,.5);box-shadow:0 1px 0 1px rgba(0,0,0,.5),inset 0 1px 1px 0 rgba(255,255,255,.5);cursor:pointer;-webkit-transition:all ease-in-out .2s;transition:all ease-in-out .2s;color:#fff;position:absolute;font-size:40px;z-index:2;top:65%}.sl-arrow.sl-left{left:-8%}.sl-arrow.sl-right{right:-8%}.sl-arrow i{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.sl-arrow:hover{background-color:#fe0;color:#313841}a.logo{display:block}a.logo:hover .wrap-logo span:nth-child(1){-webkit-transform:rotate(90deg) translate(7px,22px);-ms-transform:rotate(90deg) translate(7px,22px);transform:rotate(90deg) translate(7px,22px);height:7px}a.logo:hover .wrap-logo span:nth-child(2){-webkit-transform:rotate(180deg) translate(12px,13px);-ms-transform:rotate(180deg) translate(12px,13px);transform:rotate(180deg) translate(12px,13px)}a.logo:hover .wrap-logo span:nth-child(3){-webkit-transform:translate(-8px,-8px) rotate(180deg);-ms-transform:translate(-8px,-8px) rotate(180deg);transform:translate(-8px,-8px) rotate(180deg);width:15px}a.logo .wrap-logo{-webkit-transition:all ease-in-out .2s;transition:all ease-in-out .2s;position:relative;background-color:#fe0;width:40px;height:36px;-webkit-box-shadow:rgba(17,17,17,.35) 1px 1px 1px;box-shadow:rgba(17,17,17,.35) 1px 1px 1px;float:left;-webkit-border-radius:4px;border-radius:4px;display:inline-block;margin-right:10px}a.logo .wrap-logo span{width:26px;height:3px;background-color:#000;position:absolute;-webkit-transition:all cubic-bezier(.68,-.55,.27,1.55) .4s;transition:all cubic-bezier(.68,-.55,.27,1.55) .4s;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}a.logo .wrap-logo span:nth-child(1){top:7px}a.logo .wrap-logo span:nth-child(2){top:16px}a.logo .wrap-logo span:nth-child(3){top:25px}a.logo p{font-size:30px;font-weight:700;line-height:38px;text-shadow:rgba(17,17,17,.35) 1px 1px 1px}a.logo:hover{text-decoration:none}.menu .menu__item{float:left;display:block;padding:10px 16px;font-size:14px;font-weight:700;-webkit-border-radius:5px;border-radius:5px;margin:0 12px;position:relative;text-shadow:rgba(17,17,17,.35) 1px 1px 1px;z-index:1}.menu .menu__item::before{position:absolute;content:"";top:0;left:0;width:100%;height:100%;-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-border-radius:5px;border-radius:5px;background-color:#38404a;-webkit-box-shadow:0 1px 0 1px rgba(0,0,0,.1),inset 0 1px 1px 0 rgba(255,255,255,.1);box-shadow:0 1px 0 1px rgba(0,0,0,.1),inset 0 1px 1px 0 rgba(255,255,255,.1);z-index:-1;-webkit-transition:all cubic-bezier(.68,-.55,.27,1.55) .2s;transition:all cubic-bezier(.68,-.55,.27,1.55) .2s;opacity:0}.menu .menu__item:hover{text-decoration:none;color:#fff}.menu .menu__item:hover::before{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);color:#fff;opacity:1}.menu .menu__item--active{background-color:#fe0;color:#313841;-webkit-box-shadow:0 1px 0 1px rgba(0,0,0,.1);box-shadow:0 1px 0 1px rgba(0,0,0,.1);-webkit-transition:all cubic-bezier(.68,-.55,.27,1.55) .2s;transition:all cubic-bezier(.68,-.55,.27,1.55) .2s}.menu .menu__item--active:hover{color:#fff}.menu .menu__item--active:hover::before{opacity:1;-webkit-transform:scale(.9);-ms-transform:scale(.9);transform:scale(.9);-webkit-border-radius:50%;border-radius:50%}.toggle-menu{display:inline-block;position:relative;float:left}.toggle-menu span{background-color:#fe0;width:3px;height:35px;position:relative;top:0;display:inline-block;-webkit-transition:all ease-in-out .5s;transition:all ease-in-out .5s}.toggle-menu span:nth-child(1){left:0}.toggle-menu span:nth-child(2){left:5px}.toggle-menu span:nth-child(3){left:10px}.toggle-menu em{margin-left:20px;line-height:35px;position:absolute}.toggle-menu:hover span:nth-child(1),.toggle-menu:hover span:nth-child(3){top:-3px}.toggle-menu:hover span:nth-child(2){top:3px}.toggle-menu.on span{-webkit-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg)}.toggle-menu.on span:nth-child(1){-webkit-transform:rotate(126deg);-ms-transform:rotate(126deg);transform:rotate(126deg);top:-12px;left:19px;height:25px}.toggle-menu.on span:nth-child(3){left:4px;height:25px;-webkit-transform:rotate(235deg);-ms-transform:rotate(235deg);transform:rotate(235deg);top:2px}.toggle-menu.on:hover span:nth-child(2){top:0}.main-head{background-color:#313841;color:#fff;min-height:700px;background-image:url(img/header/bg-head.png);background-size:cover;background-repeat:repeat}.main-head a{color:#fff}.main-head .top-line{padding:20px 0;background-color:rgba(38,43,50,.5);border-bottom:1px solid #262b32}.main-head .top-form{float:right}.main-head .top-form__auth,.main-head .top-form__rand{background-color:#313841;color:#fff;width:35px;height:34px;display:inline-block;position:relative;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 1px rgba(0,0,0,.1),inset 0 1px 1px 0 rgba(255,255,255,.04);box-shadow:0 1px 0 1px rgba(0,0,0,.1),inset 0 1px 1px 0 rgba(255,255,255,.04);margin-right:8px;-webkit-transition:all ease .2s;transition:all ease .2s;float:left}.main-head .top-form__auth:hover,.main-head .top-form__rand:hover{background-color:#fe0;color:#313841}.main-head .top-form__auth i,.main-head .top-form__rand i{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.main-head .top-form__rand{background-color:#4b5664}.main-head .top-form__auth{background-color:#3a424d}.form__search{width:-webkit-calc(100% - 90px);width:calc(100% - 90px)}.form__search input{height:34px;-webkit-box-shadow:0 1px 0 1px rgba(0,0,0,.1);box-shadow:0 1px 0 1px rgba(0,0,0,.1);-webkit-border-radius:3px 0 0 3px;border-radius:3px 0 0 3px;border:none;padding-left:15px;padding-right:4px;color:#313841}.form__search button{background-color:#fe0;color:#313841;width:100%;border:none;height:34px;width:34px;-webkit-box-shadow:0 1px 0 1px rgba(0,0,0,.1);box-shadow:0 1px 0 1px rgba(0,0,0,.1);-webkit-border-radius:0 3px 3px 0;border-radius:0 3px 3px 0;margin-left:-5px;-webkit-transition:all ease-in-out .2s;transition:all ease-in-out .2s}.form__search button:hover{background-color:#4b5664;color:#fe0}.sl-header{text-align:center;position:relative}.sl-header .sl-header__slide{margin-top:50px}.sl-header .sl-header__head{color:#fff;margin-bottom:10px;text-shadow:rgba(17,17,17,.35) 1px 1px 1px;display:inline-block;line-height:75px}.sl-header .sl-header__desc{opacity:.7;margin-bottom:40px}.sl-header .sl-header__img{display:inline-block;vertical-align:bottom;max-width:100%;height:500px}.sl-header .sl-header__img img{width:100%;height:100%;margin-bottom:-10px}.sl-dots{color:#313841;background-color:#f1f2f3;text-align:center}.sl-nav{padding:50px 0}.sl-nav .sl-nav__item{cursor:pointer;position:relative}.sl-nav .sl-nav__item::before{position:absolute;content:"";width:1px;height:50px;background-color:#c1c2c2;right:-10px;top:60px}.sl-nav .sl-nav__item:hover .sl-nav__img::before{opacity:1;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-border-radius:0;border-radius:0}.sl-nav .sl-nav__item:hover .sl-nav__head h3{color:#3ea5ce}.sl-nav .sl-nav__img{display:inline-block;height:180px;max-width:100%;position:relative}.sl-nav .sl-nav__img::before{position:absolute;content:"";top:37px;left:5px;width:94%;height:56%;-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-border-radius:50%;border-radius:50%;opacity:0;-webkit-transform-origin:50%;-ms-transform-origin:50%;transform-origin:50%;-webkit-transition:all cubic-bezier(.65,.05,.36,1) .3s;transition:all cubic-bezier(.65,.05,.36,1) .3s;background-color:#fe0}.sl-nav .sl-nav__img img{width:100%}.sl-nav .sl-nav__head{font-size:21px;line-height:56px;font-weight:700;display:block}.sl-nav .sl-nav__head:hover{text-decoration:none}.sl-nav .sl-nav__head h3{-webkit-transition:all ease .2s;transition:all ease .2s}.sl-nav .sl-nav--iphone .sl-nav__img::before{width:79px;height:110px;top:22px;left:42px}.sl-nav .sl-nav--iphone .link--hover{top:50px}.sl-nav .sl-nav--ipad::before{display:none}.sl-nav .sl-nav--ipad .sl-nav__img::before{top:15px;left:30px;width:100px;height:127px}.sl-nav .sl-nav--ipad .link--hover{top:50px}.link--hover{background-color:#f1f2f3;display:block;position:absolute;width:50px;height:50px;-webkit-border-radius:50%;border-radius:50%;top:22%;left:43%}.link--hover i{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);font-size:20px;color:#313841}.link--hover:hover{background-color:#313841}.link--hover:hover i{color:#fe0}</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load Fonts CSS Start -->
+	<script>
+		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+	</script>
+	<!-- Load Fonts CSS End -->
+
+	<!-- Load Custom CSS Start -->
+	
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load Custom CSS End -->
+
+	<!-- Load Custom CSS Compiled without JS Start -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+	<!-- Load Custom CSS Compiled without JS End -->
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color End -->
+
+</head>
+
+<body>
+
+	<!-- шапка -->
+	<header class="main-head">
+		<!-- меню -->
+		<div class="top-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<a href="#" class="logo">
+							<span class="wrap-logo">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+							<p class="logo__text">fair</p>
+						</a>
+					</div>
+					<div class="col-lg-4 col-xs-8  col-lg-push-6">
+						<form action="" class="top-form">
+							<a href="#" class="top-form__auth"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></a>
+							<a href="#" class="top-form__rand"><i class="fa fa-random" aria-hidden="true"></i></a>
+							<label for="" class="form__search">
+								<input type="text" placeholder="search...">
+								<button><i class="fa fa-search" aria-hidden="true"></i></button>
+							</label>
+						</form>
+					</div>
+					<div class="col-lg-6 col-xs-2  col-lg-pull-4">
+						<nav>
+							<a href="#" class="toggle-menu hidden-lg">
+							 <span></span>
+							 <span></span>
+							 <span></span>
+							</a>
+							<ul class="menu" id="menu">
+								<li><a href="#menu" class="menu__item menu__item--active">Home</a></li>
+								<li><a href="#portfolio" class="menu__item">Portfolio</a></li>
+								<li><a href="#drops" class="menu__item">Drops</a></li>
+								<li><a href="#blog" class="menu__item">Blog</a></li>
+								<li><a href="#contact" class="menu__item">Contact</a></li>
+							</ul>
+						</nav>
+					</div>				
+				</div>
+			</div>
+		</div>
+
+
+		<!-- слайдер -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					
+					<div class="sl-header">
+						
+						<!-- слайд -->
+						<div class="sl-header__slide">
+							<h1 class="sl-header__head">“A Title Showcase Example Presentation”</h1>
+							<p class="sl-header__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+							<div class="sl-header__img">
+								<img src="img/header/sl1.png" alt="Computer">
+							</div>
+						</div>
+
+						<!-- слайд -->
+						<div class="sl-header__slide">
+							<h1 class="sl-header__head">“A Title Showcase Example Presentation”</h1>
+							<p class="sl-header__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+							<div class="sl-header__img">
+								<img src="img/header/sl2.png" alt="Computer">
+							</div>
+						</div>
+
+						<!-- слайд -->
+						<div class="sl-header__slide">
+							<h1 class="sl-header__head">“A Title Showcase Example Presentation”</h1>
+							<p class="sl-header__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+							<div class="sl-header__img">
+								<img src="img/header/sl3.png" alt="Computer">
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- навигация по слайдеру -->
+		<section class="sl-dots">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+
+						<div class="sl-nav">
+							
+							<!-- слад 1 -->
+							<div class="sl-nav__item sl-nav--monitor">
+								<div class="sl-nav__img">
+									<img src="img/format/1.png" alt="devise monitor">
+								</div>
+								<a href="#" class="sl-nav__head"><h3>Monitor Format</h3></a>
+								<p class="sl-nav__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, nostrum nobis doloribus!</p>
+								<a href="#" class="link--hover"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							</div>
+
+							<!-- слад 2 -->
+							<div class="sl-nav__item sl-nav--iphone">
+								<div class="sl-nav__img">
+									<img src="img/format/2.png" alt="devise iphone">
+								</div>
+								<a href="#" class="sl-nav__head"><h3>iPhone Format</h3></a>
+								<p class="sl-nav__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, nostrum nobis doloribus!</p>
+								<a href="#" class="link--hover"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							</div>
+
+							<!-- слад 3 -->
+							<div class="sl-nav__item sl-nav--ipad">
+								<div class="sl-nav__img">
+									<img src="img/format/3.png" alt="devise ipad">
+								</div>
+								<a href="#" class="sl-nav__head"><h3>iPad Format</h3></a>
+								<p class="sl-nav__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, nostrum nobis doloribus!</p>
+								<a href="#" class="link--hover"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</header>
+
+	<!-- секция responsive -->
+	<section class="responsive sect">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="sect__head">Think Responsive, Customize at Will</h2>
+					<p class="sect__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-7 col-lg-offset-1">
+					
+					<div class="responsive__img">
+						<img src="img/download/mobile.png" class="responsive--mobile" alt="mobile">
+						<img src="img/download/tablet.png" class="responsive--tablet" alt="tablet">
+						<img src="img/download/psd.png" class="responsive--psd" alt="psd">
+					</div>
+
+				</div>
+
+				<div class="col-lg-4 ">
+					<div class="responsive-text">
+						<h3 class="responsive-text__head">Template for you Projects</h3>
+						<p class="responsive-text__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+						<p class="responsive-text__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+						<p class="responsive-text__desc"><strong>Duis aute irure dolor in reprehenderit</strong> in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+						<button class="btn">Download <i class="fa fa-long-arrow-down" aria-hidden="true"></i></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- секция  portfolio -->
+	<section class="portfolio sect" id="portfolio">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="sect__head">Our Portfolio. Work in Progress</h2>
+					<p class="sect__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				</div>
+			</div>
+
+
+			<!-- slider portfolio -->
+			<div class="row">
+				<div class="col-lg-12">
+					
+					<div class="sl-portfolio">
+
+						<!-- слад 1 -->
+						<div class="sl-portfolio__item">
+							<div class="sl-portfolio__img">
+								<img src="img/portfolio/1.png" alt="image">
+								<a href="#" class="link--hover"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							</div>
+							<a href="#" class="sl-portfolio__head"><h3>Flat UI Kit vol1</h3></a>
+							<p class="sl-portfolio__date">Apr 10, 2016</p>
+							
+						</div>
+
+						<!-- слад 2 -->
+						<div class="sl-portfolio__item">
+							<div class="sl-portfolio__img">
+								<img src="img/portfolio/2.png" alt="image">
+								<a href="#" class="link--hover"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							</div>
+							<a href="#" class="sl-portfolio__head"><h3>Icon’s troke</h3></a>
+							<p class="sl-portfolio__date">Apr 6, 2016</p>
+
+						</div>
+
+						<!-- слад 3 -->
+						<div class="sl-portfolio__item">
+							<div class="sl-portfolio__img">
+								<img src="img/portfolio/3.png" alt="image">
+								<a href="#" class="link--hover"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							</div>
+							<a href="#" class="sl-portfolio__head"><h3>Loqui UI Theme</h3></a>
+							<p class="sl-portfolio__date">Mar 25, 2013</p>
+						</div>
+
+						<!-- слад 4 -->
+						<div class="sl-portfolio__item">
+							<div class="sl-portfolio__img">
+								<img src="img/portfolio/4.png" alt="image">
+								<a href="#" class="link--hover"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							</div>
+							<a href="#" class="sl-portfolio__head"><h3>Music Store UI</h3></a>
+							<p class="sl-portfolio__date">Mar 8, 2013</p>
+						</div>
+
+						<!-- слад 5 -->
+						<div class="sl-portfolio__item">
+							<div class="sl-portfolio__img">
+								<img src="img/portfolio/3.png" alt="image">
+								<a href="#" class="link--hover"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							</div>
+							<a href="#" class="sl-portfolio__head"><h3>Flat UI Kit vol1</h3></a>
+							<p class="sl-portfolio__date">Apr 10, 2016</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- секция project -->
+	<section class="project sect" id="drops">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="sect__head">Our Projects. Various Styles</h2>
+					<p class="sect__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+				 <!-- карточка проекта -->
+					<div class="project__card">
+						<div class="project__img">
+							<img src="img/our_projects/1.png" alt="image">
+						</div>
+						<div class="project__content">
+							<h3 class="project__head">Paper Hot Cup Mockup</h3>
+							<p class="project__desc">Lorem ipsum dolor sit amet,  in nisi repellat commodi esse cupiditate autem voluptatem, debitis maxime et minus. Libero et illum vitae, suscipit consequuntur officia quos.</p>
+							<h4 class="project__subtit">Duis aute irure dolor in reprehenderit </h4>
+						</div>
+					</div>
+				</div>
+				
+				<!-- карточка проетка -->
+				<div class="col-md-4 col-sm-6">
+					<div class="project__card">
+						<div class="project__img">
+							<img src="img/our_projects/2.png" alt="image">
+						</div>
+						<div class="project__content">
+							<h3 class="project__head">Paper Hot Cup Mockup</h3>
+							<p class="project__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia aliquam, in nisi repellat commodi esse cupiditate autem consequuntur officia quos.</p>
+							<h4 class="project__subtit">Duis aute irure dolor in reprehenderit </h4>
+						</div>
+					</div>
+				</div>
+
+				<!-- видео -->
+				<div class="col-md-4">
+					<video width="100%" height="auto" controls="controls" poster="img/our_projects/3.png">
+						<source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+						<source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+						<source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
+						 Тег video не поддерживается вашим браузером. 
+						<a href="img/our_projects/1.png">Скачайте видео</a>.
+					</video>
+
+					<div class="project-quote">
+						<p class="project-quote__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"</p>
+						<strong class="project-quote__auth">by <a href="#">Bob Vladislav</a></strong>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<!-- секция blog -->
+	<section class="blog" id="blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 col-xs-12">
+					<div class="blog__left">
+						<div class="row">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-8 col-xs-9">
+										<h2 class="sect__head">The Blog</h2>
+										<p class="sect__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+									</div>
+									<div class="col-sm-4 col-xs-3">
+										<button class="btn__sort"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+										<button class="btn__sort btn__sort--active"><i class="fa fa-th" aria-hidden="true"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="row">
+									<div class="blog__container">
+										<div class="col-sm-6">
+											<div class="blog__card">
+												<div class="blog__img">
+													<img src="img/blog/1.png" alt="image blog">
+												</div>
+													<div class="blog__content">
+													<div class="blog__date">April 17, 2016</div>
+													<a href="#" class="blog__head">Ecologicard, Elegant Business card Mockup</a>
+													<p class="blog__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
+													<strong class="blog__by">by <a href="https://vk.com/id252972675" target="_blank">Kudel Andrei</a></strong>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="blog__card">
+												<div class="blog__img">
+													<img src="img/blog/2.png" alt="image blog">
+												</div>
+													<div class="blog__content">
+													<div class="blog__date">April 17, 2016</div>
+													<a href="#" class="blog__head">Novus, Admin Panel Template PSD Resource</a>
+													<p class="blog__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
+													<strong class="blog__by">by <a href="https://vk.com/id252972675" target="_blank">Kudel Andrei</a></strong>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="blog__pages">
+									<ul>
+										<li><a href="#" class="blog__page blog__page--noactive">Prevous</a></li>
+										<li><a href="#" class="blog__page blog__page--active">1</a></li>
+										<li><a href="#" class="blog__page">2</a></li>
+										<li><a href="#" class="blog__page">3</a></li>
+										<li><a href="#" class="blog__page">4</a></li>
+										<li><a href="#" class="blog__page">5</a></li>
+										<li><a href="#" class="blog__page">6</a></li>
+										<li><a href="#" class="blog__page">Next</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 hidden-md hidden-sm hidden-xs blog__right">
+					<div class="blog__form form-sort">
+						<form action="" class="blog__search">
+							<label for="" class="form__search">
+								<input type="text" placeholder="search our blog...">
+								<button><i class="fa fa-search" aria-hidden="true"></i></button>
+							</label>
+						</form>
+						<div class="form-sort__content">
+							<h3 class="form-sort__head">by Category</h3>
+							<button class="form-sort__btn"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+							<ul class="form-sort__category">
+								<li><a href="#" class="form-sort__item form-sort__item--active">All</a></li>
+								<li><a href="#" class="form-sort__item">Graphic Design</a></li>
+								<li><a href="#" class="form-sort__item">User Interface</a></li>
+								<li><a href="#" class="form-sort__item">Social media</a></li>
+								<li><a href="#" class="form-sort__item">Technology</a></li>
+								<li><a href="#" class="form-sort__item">Buisness</a></li>
+								<li><a href="#" class="form-sort__item">Development</a></li>
+								<li><a href="#" class="form-sort__item">User Experience</a></li>
+								<li><a href="#" class="form-sort__item">Interview</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- секция полного блога -->
+	<section class="full-blogs">
+		<div class="full-blogs__top clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="full-blogs__head">The blog</h2>
+						<div class="full-blogs__nav">
+							<button class="btn btn__prev"><i class="fa fa-angle-left" aria-hidden="true"></i>Previos blog</button>
+							<button class="btn btn__next">Next blog<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="full-blog">
+						<div class="row">
+							<div class="col-lg-8">
+								<h2 class="full-blog__head">Our Seeks iPhone App UI Kit psd is a sleek app design</h2>
+								<ul class="full-blog__inf">
+									<li>March 20, 2016</li>
+									<li><span>3</span><a href="#">comments</a></li>
+									<li>by <a href="https://vk.com/id252972675" target="_blank">Kudel Andrei</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="full-blog__img">
+							<img src="img/full-blog/1.png" alt="image full blog">
+						</div>
+						<div class="full-blog__content">
+							<p class="full-blog__subhead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint et perspiciatis sequi quos pariatur delectus voluptates.</p>
+							<h3 class="full-blog__subtit">1. Lorem ipsum dolor sit amet.</h3>
+							<p class="full-blog__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum delectus quas, deleniti fugit vero aut, eligendi a odit, voluptate hic quasi! Error maxime repellat voluptatem consequuntur, facere blanditiis corrupti optio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum provident mollitia ex similique odio, tenetur qui saepe fuga dolorum blanditiis, quas minima deleniti voluptates? Eligendi molestias, distinctio facere accusantium doloremque.</p>
+							<h3 class="full-blog__subtit">2. Lorem ipsum dolor sit amet.</h3>
+							<p class="full-blog__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum delectus quas, deleniti fugit vero aut, eligendi a odit, voluptate hic quasi! Error maxime repellat voluptatem consequuntur, facere blanditiis corrupti optio.</p>
+						</div>
+						<div class="full-blog__bottom clearfix">
+							<div class="full-blog__left blog-auth">
+								<div class="blog-auth__img">
+									<img src="img/full-blog/2.png" alt="athor blog">
+								</div>
+								<p class="blog-auth__write">Written by <a href="#">Kudel Andrei</a></p>
+							</div>
+
+							<div class="full-blog__right blog-like">
+								<button class="blog-like__btn"><i class="fa fa-thumbs-up" aria-hidden="true"></i>123</button>
+								<button class="blog-like__btn twit"><i class="fa fa-twitter" aria-hidden="true"></i>124</button>
+								<button class="blog-like__top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="comments">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="comments__head"><span>3</span>Comments</h2>
+					<div class="line-width"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="comments__container">
+
+						<!-- комментарий -->
+						<div class="comment">
+							<div class="row">
+								<div class="col-sm-2 col-xs-4">
+									<div class="comment__img">
+										<img src="img/comments/1.png" alt="comment img">
+									</div>
+								</div>
+								<div class="col-sm-10 col-xs-8">
+									<div class="comment__text">
+										<div class="comment__top-line clearfix">
+											<div class="comment-left">
+												<h3 class="comment__auth">Buchta Dima</h3>
+												<span class="comment__date">March 25, 2016 at 5:42 pm</span>
+											</div>
+											<div class="comment-right">
+												<bottom class="comment__reply btn">Reply</bottom>
+											</div>
+										</div>
+										<p class="comment__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis voluptas minima nam quasi culpa temporibus iusto eos reprehenderit explicabo harum, impedit atque iste nobis, cum, natus nostrum molestiae sequi id?</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- комментарий -->
+						<div class="comment">
+							<div class="row">
+								<div class="col-sm-2 col-xs-4 col-sm-offset-2">
+									<div class="comment__img">
+										<img src="img/comments/2.png" alt="comment img">
+									</div>
+								</div>
+								<div class="col-sm-8 col-xs-8">
+									<div class="comment__text">
+										<div class="comment__top-line clearfix">
+											<div class="comment-left">
+												<h3 class="comment__auth">Eltna Lina</h3>
+												<span class="comment__date">March 25, 2016 at 5:44 pm</span>
+											</div>
+											<div class="comment-right">
+												<bottom class="comment__reply btn">Reply</bottom>
+											</div>
+										</div>
+										<p class="comment__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis voluptas minima nam quasi culpa temporibus iusto eos reprehenderit explicabo harum, impedit atque iste nobis, cum.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- комментарий -->
+						<div class="comment">
+							<div class="row">
+								<div class="col-sm-2 col-xs-4">
+									<div class="comment__img">
+										<img src="img/comments/3.png" alt="comment img">
+									</div>
+								</div>
+								<div class="col-sm-10 col-xs-8">
+									<div class="comment__text">
+										<div class="comment__top-line clearfix">
+											<div class="comment-left">
+												<h3 class="comment__auth">Bob Vladik</h3>
+												<span class="comment__date">March 26, 2016 at 7:42 pm</span>
+											</div>
+											<div class="comment-right">
+												<bottom class="comment__reply btn">Reply</bottom>
+											</div>
+										</div>
+										<p class="comment__desc">Armuha nadaela sit amet, consectetur adipisicing elit. Veritatis voluptas minima nam quasi culpa temporibus iusto eos reprehenderit explicabo harum, impedit atque iste nobis, cum, natus nostrum molestiae sequi id? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, illum.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="line-width"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+
+					<form action="" class="comments-form">
+						<h2 class="comments-form__head">Leave a Comment</h2>
+						<label for=""><input type="text" class="comments-form__input" placeholder="You name"></label>
+						<label for=""><input type="text" class="comments-form__input" placeholder="You email"></label>
+						<textarea name="" id="" cols="30" rows="10" placeholder="You comment"></textarea>
+						<bottm class="btn">Post Comment</bottm>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<!-- секция контактов -->
+	<section class="contact sect" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="sect__head">Contact Us</h2>
+					<p class="sect__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reiciendis, minus cumque. Lorem ipsum dolor sit amet, consectetur.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="contact__wrap">
+						<a href="#" class="logo clearfix">
+							<span class="wrap-logo">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+							<p class="logo__text">fair</p>
+						</a>	
+						<p class="contact__addr">
+							<i class="fa fa-map-marker" aria-hidden="true"></i> 123 Street Name. S. 321 <br> City Name, State Name
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="contact__wrap">
+						<div class="contact__phone"> <i class="fa fa-phone" aria-hidden="true"></i> <span>Tel.</span>  8(029)-999-99-00</div>
+						<div class="contact__fax"> <i class="fa fa-fax" aria-hidden="true"></i><span>Fax.</span> 8(233)-999-999-000</div>
+						<div class="contact__Email"> <i class="fa fa-envelope-o" aria-hidden="true"></i> Email: <a href="mailto:kudel1995@mail.ru">kudel1995@mail.ru</a></div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="contact__wrap contact__wrap--last">
+						<ul class="contact__soc">
+							<li><a href="https://vk.com/id252972675" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i>VKontakte</a></li>
+							<li><a href="https://github.com/KudelAndrei" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a></li>
+							<li><a href="#"><i class="fa fa-rss-square" aria-hidden="true"></i>RSS</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="map">
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=sAYP0gDQ3eWm5xk48239yFqLR-hvPPdu&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+	</section>
+
+	<footer class="main-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="main-footer__text">@2016 <a href="#">Fair.</a> All Rights Reserved</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="hidden">
+		<!-- code -->
+	</div>
+
+	<!-- Optimized loading JS Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.min.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Optimized loading JS End -->
+
+</body>
+</html>
